@@ -1,0 +1,39 @@
+body{
+  background-color:#d9e8d8;
+
+}
+
+@font-face{
+  font-family: "Bront";
+   src: url(Botham-SemiEktended.otf) format("opentype");
+}
+h1,.description{
+  text-align: center;
+  color:#2f2d17;
+}
+
+h1{
+  font-size: 60px;
+  font-family:"Bront"
+}
+
+.description{
+  font-size:22px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.survey-form{
+  font-size:18px;
+  margin-top:50px;
+  margin-bottom:40px;
+  width:75%;
+}
+
+.formfull{
+width:50%;
+}
+
+.detailshead,.parameters,.reach,.rolehead,.reach{
+  font-weight: bolder;
+}
