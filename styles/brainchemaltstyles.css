@@ -1,0 +1,157 @@
+body{
+  background-image: url(bcaback2.png);
+ }
+
+@font-face {
+   font-family: "cf1";
+   src: url(Jaoren.ttf) format("truetype");
+   font-family: "cf2";
+   src: url(StampyLight.ttf) format("truetype");
+   font-family: "cf3";
+   src: url(revertro.ttf) format("truetype");
+   font-family:"halovidgame";
+   src: url(HALO____.TTF) format("truetype");
+   font-family:"joystix";
+   src: url(joystix\ monospace.otf) format("opentype");
+ 
+ }
+.brainchemalt-header{
+ color:#24105a;
+ text-align: center;
+ font-size: 100px;
+ font-family:"joystix";
+ text-shadow: 5px 5px 3px black, 0 0 25px #007BFF, 0 0 5px darkblue;
+ font-weight: bold;
+
+}
+
+.subheading{
+ font-family: "joystix";
+ font-size: 18px;
+ color: white;
+ text-align: center;
+ margin-top: 200px;
+ margin-bottom: 10px;
+ background-color: #0c073f;
+ padding-top: 20px;
+ padding-bottom:20px;
+}
+
+.downarrow-span{
+ font-size: 36px;
+}
+ .button-container{
+  display: flex;
+  justify-content: center; /* Align items horizontally */
+  margin-top: 20px; /* Adjust top margin for spacing */
+ }
+
+.film-button,.msc-button,.mscvid-button,.books-button,.visart-button{
+ padding: 15px 30px;
+ border: 5px outset buttonborder;
+ border-radius: 12px;
+ text-decoration: none;
+ display:block;
+ text-align: center;
+ margin-top: 150px;
+ margin-bottom: 200px;
+ margin-right: 20px;
+ font-family: "joystix";
+ }
+
+
+ .film-button{
+ border-color:#F4FFFF;
+ color: #96FFFE;
+ background-color: #F79ED1;
+ }
+ .mscvid-button{
+ border-color:#E0FFFF; ;
+ color: #AAFFFE;
+ background-color: #FF6EC1;
+ }
+
+ .msc-button{
+ border-color: #C5FFFE;
+ color: #C5FFFE;
+ background-color: #F450AE;
+ 
+ }
+
+ .books-button{
+ border-color: #AAFFFE;
+ color: #E0FFFF;
+ background-color:#E5369A;
+ }
+
+ .visart-button{
+ border-color: #96FFFE;
+ color: #F4FFFF;
+ background-color: #CE2686;
+ }
+ 
+
+ .film-button:hover,.mscvid-button:hover,.msc-button:hover,.books-button:hover,.visart-button:hover{
+   background-color: #1397E6;
+   transition: 0.6s;
+   transform: scale(1.1);
+ }
+
+ .film-button::before,.mscvid-button::before,.msc-button::before,.books-button::before,.visart-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(to right, #1e139e, transparent, #6257ea);
+  animation: glitch 1s;
+}
+
+@keyframes glitch {
+0% {
+ left: -50%;
+}
+20% {
+ left: 0;
+}
+80% {
+ left: 100%;
+}
+100% {
+ left: 50%;
+}
+}
+
+
+ul {
+list-style-type: none;
+margin-top:0px;
+padding: 0;
+overflow: hidden;
+background-color:#5F00BA;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: #f47fb6;
+text-align: center;
+padding: 20px 28px;
+text-decoration: none;
+font-size:12px;
+font-weight:bold;
+font-family: "joystix";
+
+}
+
+li a:hover {
+background-color:darkblue;
+cursor:pointer;
+color:#5F00BA;
+font-size:14px;
+transition:1s;
+}
