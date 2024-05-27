@@ -1,0 +1,80 @@
+body{
+  background-image: url(musicvideo.png);
+}
+
+hr{
+  height: 3px;
+}
+
+@font-face {
+font-family: "mscvid1";
+src: url(BlackStoryDemoRegular.ttf) format(truetype);
+}
+
+.home-link{
+  color:#13012f;
+}
+.home-link:hover{
+  font-size: 16px;
+
+}
+ .mscvid-head{
+  font-family: "mscvid1";
+  font-size: 100px;
+  text-align: center;
+  color:#311f4b;
+ }
+
+ .mscvid-sub{
+   font-family: "mscvid1";
+   font-size: 16px;
+  text-align: center;
+  color: #311f4b;
+  background-color: #bdb7d1;
+  margin-top: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+ }
+
+ .garage-rooftop-box{
+  background-color: #230b83;
+  max-width: 600px;
+  max-height:400px;
+  width:80%;
+  /*margin: 20px auto;*/
+  padding-bottom:30px;
+  border-radius:5px;
+  border: 7px solid grey;
+  text-align: center;
+  color: aliceblue;
+  
+
+}
+
+.remember-me-box{
+  background-color: #230b83;
+  max-width: 600px;
+  max-height:400px;
+  width:80%;
+  /*margin: 20px auto;*/
+  padding-bottom:30px;
+  border-radius:5px;
+  border: 7px solid grey;
+  text-align: center;
+  color: aliceblue;
+  
+
+}
+
+iframe{
+    width: 100%; /* Make the iframe take the full width of the container */
+    height: 160px; /* Set a fixed height for the iframe */
+    padding-top: 20px;/* Remove the default iframe border */
+    padding-bottom:20px; 
+    border:none;
+}
+
+.garage-rooftop-heading{
+  font-size: 30px;
+}
+
