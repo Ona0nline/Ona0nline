@@ -1,5 +1,6 @@
 <!-- This file acts as a sandbox
- -->
+Alert acts as print statement 
+-->
 
  <!-- 
  Script tag embeds statements into html code
@@ -7,7 +8,123 @@
 
 <script>
   alert('Hello World');
-  alert('Hello');
-  alert('World');
+  alert('This is the Javascript Sandbox!!!');
+  alert('Stay tuned <3');
 </script>
 <!-- These messages followed one after the other -->
+
+<!-- Variables are initialised using 'let' -->
+<script>
+let user = 'Justice, ', age = 22, funfact = ',Loves Burger King';
+// How to concatonate in javascript, use back ticks and these symbols
+alert(`Person reading is: ${user} ${age} ${funfact}`)
+  </script>
+
+  <!-- Constants used to remember compicated values
+    -->
+  <script>
+    const COLOUR_RED = "#96FFFE";
+    let color = COLOUR_RED;
+    // alert(color)
+  </script>
+
+  <!-- <script>
+    let number = 100;
+    // number = null
+    typeof number
+    alert(typeof number)
+  </script> -->
+
+  <script>
+    // Prompt. It appears as modal window with a text message, input field for the visitor and a 
+    // ok or cancel option
+    // Accepts two params: title and default. Title is the text to show and default allows input
+
+    let feelings = prompt("How was your day?",'');
+    alert(`Glad to hear your day was ${feelings}. It will be really awkward if you said it sucked.`)
+    let order = prompt("Whats your burger king order?",'');
+    alert(`It would be crazy if your order, (a ${order}), suddenly appeared oh my word.`);
+    let want = confirm(`Would you like a ${order}?`);
+    alert(`Mmmh I knew it. I would also like a ${order}. Look at us, burgerless.`); 
+  </script>
+
+  <script>
+    let text = "Enter quiz";
+    alert(text);
+    let counter = 0;
+
+    let access;
+
+    let nonchalance = prompt("How nonchalant are you on a scale of 1-10? (Answer will grant or revoke access to quiz)");
+    if (nonchalance >=5){
+      alert("Lol if your answer must've been above average. Your access to the quiz has been granted.")
+      access = true;
+    }else{
+      alert("Hmmh so low? I score you a 7 actually")
+      access = false;
+    }
+    alert(access)
+    
+    if (access = true){
+      let quiz1 = prompt("How many days have you known Ona for (number only)?");
+    if (quiz1 == 6){
+      alert("Too easy");
+      counter ++;
+    }else{
+      alert("Crazy business")
+    };
+
+    let quiz2 = prompt("What is Onas' surname?(Mind the capital letter)");
+    if(quiz2 == "Zwane"){
+      alert ("Too easy");
+      counter ++;
+    } else{
+      alert(`${quiz2} is crazy...`)
+    };
+
+    let quiz3 = prompt("Her favourite look (hair)?");
+    if (quiz3 == "bald"){
+      alert("Ncaw you listen");
+      counter++
+    }else{
+      alert("Girl cmon now💀")
+    };
+
+    let quiz4 = prompt("Ona had breakfast today. The plate had an egg, bacon and ?");
+    if (quiz4 == "potatoes"){
+      alert("hmmhkay...");
+      counter++;
+    }else{
+      alert("I hope you mispelt potatoes or sumn...")
+    };
+
+    let quiz5 = prompt("Do you enjoy these code letters? (yes or no)");
+    if (quiz5 == "yes"){
+      alert("You have entered a lifelong subscription");
+      counter++;
+    }else{
+      alert("Oh LOL💀")
+    };
+
+
+if (counter >= 3){
+    let quiz6 = prompt(`Congratulations! You scored ${counter}/5! July or August?`);
+      if(quiz6 == "july" || quiz6 == "July"){
+        alert("Okie thrifting on the 6th it is! Text Ona wtc for info.")
+      }else{
+        alert("Okie thrifting on the 3rd! Text Ona wtc for more info")
+      }
+      
+}else{
+  alert("Scored below 3? Guess you'll never know what I had to say..")
+}
+  
+
+ }else{
+  alert("No quiz for you pookie ;)")
+ }
+  
+
+</script>
+    
+
