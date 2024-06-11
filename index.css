@@ -72,24 +72,42 @@ font-size:22px;
 transition:1s;
 }
 
-.intro,.updates{
+.intro{
+  background-color: #1cbbdb;
   font-size:20px;
   font-family:"joystix";
   font-weight: 100;
-  background-color: #1cbbdb;;
-  border-radius: 6px;
+border-radius: 6px;
+opacity: 60%;
+
+
+}
+.intro,.updates1,.updates2{
   padding:20px 20px 30px 50px;
   margin-top:60px;
-  opacity: 60%;
-}
-
-.updates{
-  background-color: rgb(250, 145, 162);
   opacity: 80%;
+  padding-bottom: 5px;
+  background-color: #1cbbdb;
+  font-family:"joystix";
+  font-weight: 100;
+border-radius: 6px;
   
 }
 
-.updates-heading{
+.updates-heading1{
+  font-size: 30px;
+  text-align: center;
+}
+
+.updates2{
+  background-color: rgb(blue);
+  opacity: 80%;
+  margin-top: 60px;
+  padding-bottom: 40px;
+  
+}
+
+.updates-heading2{
   font-size: 30px;
   text-align: center;
 }
@@ -158,20 +176,20 @@ h1{
 
 }
 
-.film-box {
-  border: 5px solid black; /* Adjust the width, style, and color as needed */
+/* .film-box {
+  border: 5px solid black;
   border-radius: 3px;
-  padding-left: 20px; /* Optional: Add some padding to make the content look better */
+  padding-left: 20px;
   padding-right: 20px;
   margin-top: 100px;
-  margin-left: 20px; /* Optional: Add some margin to separate the box from other elements */
+  margin-left: 20px; 
   margin-right: 20px;
   text-align: center;
   background-color: #96041A;
-  text-align: center; /* Center-align text */
+  text-align: center; 
   width:800px;
-  
-}
+   */
+
 
 h2{
   font-family: "joystix";
@@ -182,8 +200,8 @@ h2{
   border-radius: 6px;
 }
 
-.explain2{
+/* .explain2{
   font-size: 18px;
   font-style: italic;
-}
+} */
 
