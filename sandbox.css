@@ -24,3 +24,23 @@ body{
   margin-top: 140px;
 
 }
+
+.calm:hover{
+  /* font-size: 50px; */
+  opacity: 80%;
+  transition: 1s;
+  color: #6cc1ff;
+  font-style: italic;
+}
+
+/* .are:hover{
+  color: #1ea4ff
+}
+
+.you:hover{
+  color: #42b4ff
+}
+
+.yet:hover{
+  color: #89cfff
+} */
