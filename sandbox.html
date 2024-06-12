@@ -1,137 +1,84 @@
 <!-- This file acts as a sandbox
 Alert acts as print statement 
 -->
+<script>
+  alert("Sandbox Shandiz day2. Tip Calculator>")
+</script>
+<script>
+  // Building a tip calculator:
+
+  function tip_calc(){
+
+    let bill = parseFloat(prompt("Welcome to Onas' Oyster. Enter bill total: ",""));
+    if(isNaN(bill)){
+      return alert("Please refresh page and enter a valid amount");
+    }
+    
+  let tipq = confirm("Would you like to add tip on that?");
+  if(!tipq){
+    return alert(`No tip added. Your total is ${bill.toFixed(2)}`)
+  }else{
+    alert("Confirmed. Thank you");
+  }
+  
+  let tipp = prompt("Please opt between: 10%,15%, and 20%:","10%");
+  alert(`${tipp} noted.`);
+
+switch(tipp){
+  case '10%':
+    let total_tip10 = (bill*1.1);
+    alert(`Your total is ${total_tip10.toFixed(2)}.`);
+    break
+
+  case "15%":
+    let total_tip15 = (bill*1.15);
+    alert(`Your total is ${total_tip15.toFixed(2)}.`);
+    break
+
+  case "20%":
+    let total_tip20 = (bill*1.2);
+    alert(`Your total is ${total_tip20.toFixed(2)}.`);
+    break
+
+  default:
+    alert("Please select a valid option.")
+    break
+  }
+  }
+
+  tip_calc();
+  
+
+  
+</script>
+
+  
+
+
+
+
+
+
+
+
+
+
 
  <!-- 
  Script tag embeds statements into html code
  alert 'element' executes statements -->
 
-<script>
-  alert('Hello World');
-  alert('This is the Javascript Sandbox!!!');
-  alert('Stay tuned <3');
-</script>
-<!-- These messages followed one after the other -->
+ <!-- For loops syntax (begin,condition,step) -->
+<!-- <script>
+  // for(let i=0; i<10; i++){
+  //   alert(i);
+  // }
+  // // Output is 3 
+  // alert(i);
 
-<!-- Variables are initialised using 'let' -->
-<script>
-let user = 'Justice, ', age = 22, funfact = ',Loves Burger King';
-// How to concatonate in javascript, use back ticks and these symbols
-alert(`Person reading is: ${user} ${age} ${funfact}`)
-  </script>
-
-  <!-- Constants used to remember compicated values
-    -->
-  <script>
-    const COLOUR_RED = "#96FFFE";
-    let color = COLOUR_RED;
-    // alert(color)
-  </script>
-
-  <!-- <script>
-    let number = 100;
-    // number = null
-    typeof number
-    alert(typeof number)
-  </script> -->
-
-  <script>
-    // Prompt. It appears as modal window with a text message, input field for the visitor and a 
-    // ok or cancel option
-    // Accepts two params: title and default. Title is the text to show and default allows input
-
-    let feelings = prompt("How was your day?",'');
-    alert(`Glad to hear your day was ${feelings}. It will be really awkward if you said it sucked.`)
-    let order = prompt("Whats your burger king order?",'');
-    alert(`It would be crazy if your order, (a ${order}), suddenly appeared oh my word.`);
-    let want = confirm(`Would you like a ${order}?`);
-    alert(`Mmmh I knew it. I would also like a ${order}. Look at us, burgerless.`); 
-  </script>
-
-  <script>
-    let text = "Enter quiz";
-    alert(text);
-    let counter = 0;
-
-    let access;
-
-    let nonchalance = prompt("How nonchalant are you on a scale of 1-10? (Answer will grant or revoke access to quiz)");
-    if (nonchalance >=5){
-      alert("Lol your answer must've been above average. Your access to the quiz has been granted.")
-      access = true;
-    }else{
-      alert("Hmmh so low? I score you a 7 actually")
-      access = false;
-    }
-    alert(access)
-    
-    if (access = true){
-      let quiz1 = prompt("How many days have you known Ona for (number only)?");
-    if (quiz1 == 6){
-      alert("Too easy");
-      counter ++;
-    }else{
-      alert("Crazy business")
-    };
-
-    let quiz2 = prompt("What is Onas' surname?(Mind the capital letter)");
-    if(quiz2 == "Zwane"){
-      alert ("Too easy");
-      counter ++;
-    } else{
-      alert(`${quiz2} is crazy...`)
-    };
-
-    let quiz3 = prompt("Her favourite look (hair)?");
-    if (quiz3 == "bald"){
-      alert("Ncaw you listen");
-      counter++
-    }else{
-      alert("Girl cmon now💀")
-    };
-
-    let quiz4 = prompt("Ona had breakfast today. The plate had an egg, bacon and ?");
-    if (quiz4 == "potatoes"){
-      alert("hmmhkay...");
-      counter++;
-    }else{
-      alert("I hope you mispelt potatoes or sumn...")
-    };
-
-    let quiz5 = prompt("What is Onas' sourdough starters name? (Capital letter)")
-    if (quiz5 == "Gennie"){
-      alert("Wow🏅")
-    }else{
-      alert("I'll let this one slide...")
-    }
-
-    let quiz6 = prompt("Do you enjoy these code letters? (yes or no)");
-    if (quiz6 == "yes"){
-      alert("You have entered a lifelong subscription");
-      counter++;
-    }else{
-      alert("Oh LOL💀")
-    };
-
-
-if (counter >= 3){
-    let quiz7 = prompt(`Congratulations! You scored ${counter}/6! July or August?`);
-      if(quiz7 == "july" || quiz6 == "July"){
-        alert("Okie thrifting on the 6th it is! Text Ona wtc for info.")
-      }else{
-        alert("Okie thrifting on the 3rd! Text Ona wtc for more info")
-      }
-
-}else{
-  alert("Scored below 3? Guess you'll never know what I had to say..")
-}
-  
-
- }else{
-  alert("No quiz for you pookie ;)")
- }
-  
-
-</script>
-    
-
+  // Can remove any part of the for loop
+  // No step
+  for(let i = 0;i<8;i++){
+    alert(i)
+  }
+</script> -->
