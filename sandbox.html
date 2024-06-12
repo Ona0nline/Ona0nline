@@ -1,56 +1,74 @@
 <!-- This file acts as a sandbox
 Alert acts as print statement 
 -->
-<script>
-  alert("Sandbox Shandiz day2. Tip Calculator>")
-</script>
-<script>
-  // Building a tip calculator:
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="sandbox.css">
+  </head>
 
-  function tip_calc(){
+  <body>
+<p class="hey">Hey</p>
+<p class="question">Are you calm yet?</p>
 
-    let bill = parseFloat(prompt("Welcome to Onas' Oyster. Enter bill total: ",""));
-    if(isNaN(bill)){
-      return alert("Please refresh page and enter a valid amount");
-    }
+<audio autoplay>
+  <source src="Men I Trust - Show Me How (320).mp3" type="audio/mpeg">
+</audio>
     
-  let tipq = confirm("Would you like to add tip on that?");
-  if(!tipq){
-    return alert(`No tip added. Your total is ${bill.toFixed(2)}`)
-  }else{
-    alert("Confirmed. Thank you");
-  }
+    <script>
+      window.onload = function(){
+      alert("Sandbox Shandiz day2. Tip Calculator>")
+        
+        // Building a tip calculator:
+
+        function tip_calc(){
+
+          let bill = parseFloat(prompt("Welcome to Onas' Oyster. Enter bill total: ",""));
+          if(isNaN(bill)){
+            return alert("Please refresh page and enter a valid amount");
+          }
+          
+        let tipq = confirm("Would you like to add tip on that?");
+        if(!tipq){
+          return alert(`No tip added. Your total is ${bill.toFixed(2)}`)
+        }else{
+          alert("Confirmed. Thank you");
+        }
+        
+        let tipp = prompt("Please opt between: 10%,15%, and 20%:","10%");
+        alert(`${tipp} noted.`);
+
+      switch(tipp){
+        case '10%':
+          let total_tip10 = (bill*1.1);
+          alert(`Your total is ${total_tip10.toFixed(2)}.`);
+          break
+
+        case "15%":
+          let total_tip15 = (bill*1.15);
+          alert(`Your total is ${total_tip15.toFixed(2)}.`);
+          break
+
+        case "20%":
+          let total_tip20 = (bill*1.2);
+          alert(`Your total is ${total_tip20.toFixed(2)}.`);
+          break
+
+        default:
+          alert("Please select a valid option.")
+          break
+        }
+        }
+
+        tip_calc();
+      }
+      
+      </script>
+      
   
-  let tipp = prompt("Please opt between: 10%,15%, and 20%:","10%");
-  alert(`${tipp} noted.`);
-
-switch(tipp){
-  case '10%':
-    let total_tip10 = (bill*1.1);
-    alert(`Your total is ${total_tip10.toFixed(2)}.`);
-    break
-
-  case "15%":
-    let total_tip15 = (bill*1.15);
-    alert(`Your total is ${total_tip15.toFixed(2)}.`);
-    break
-
-  case "20%":
-    let total_tip20 = (bill*1.2);
-    alert(`Your total is ${total_tip20.toFixed(2)}.`);
-    break
-
-  default:
-    alert("Please select a valid option.")
-    break
-  }
-  }
-
-  tip_calc();
-  
-
-  
-</script>
+</body>
+</html>
 
   
 

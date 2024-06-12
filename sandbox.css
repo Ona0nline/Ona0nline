@@ -1,0 +1,26 @@
+body{
+  background-image: url(sandbox-back.png) ;
+  background-size: 1300px, 600px;
+}
+
+@font-face{
+  font-family: "home";
+  src: url(Jaoren.ttf) format("truetype");
+}
+
+.hey{
+  font-size: 60px;
+  text-align: left;
+  font-family: "home";
+  color: aliceblue;
+
+}
+
+.question{
+  font-size: 125px;
+  font-family: "home";
+  text-align: center;
+  color: aliceblue;
+  margin-top: 140px;
+
+}
