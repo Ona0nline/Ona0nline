@@ -58,6 +58,11 @@ function video(){
   // Decided to use Iframe instead 
   let my_video = document.createElement("IFRAME")
   my_video.setAttribute("src","https://www.youtube.com/watch?v=fMeXBqhQxFQ")
+  my_video.setAttribute("width", "560");
+  my_video.setAttribute("height", "315");
+  my_video.setAttribute("frameborder", "0");
+  my_video.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+  my_video.setAttribute("allowfullscreen", true);
 
   document.body.appendChild(my_video)
 
