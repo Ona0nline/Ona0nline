@@ -7,21 +7,24 @@
   </head>
   
   <body>
-    <div class="video-background">
+    <button class="yanc" onclick="you_aint_no_celebrity()">You ain't no celebrity</button>
 
-     <video autoplay loop muted playsinline>
-     <source src="mp3_player.mp4" type="video/mp4">
-       
-     </video> 
+    <script>
+      function you_aint_no_celebrity(){
+        let yanc_element = document.createElement("VIDEO");
 
-     <audio autoplay>
-      <source src="nervous_driver_lomelda.mp3" type="audio/mpeg">
-     
-     </audio>
+        if(yanc_element.canPlayType("video/mp4")){
+          yanc_element.setAttribute("src","Jungle - You Ain't No Celebrity feat. Roots Manuva (Official Video).mp4")
+        }
 
-</div>
+        yanc_element.setAttribute("controls","controls")
+        yanc_element.setAttribute("border-radius","8px")
+        yanc_element.setAttribute("width","550")
+        yanc_element.setAttribute("height","400")
+        document.body.appendChild(yanc_element)
+      }
+    </script>
 
-<!-- <img src="music_back2.png" alt="fallback_img" class="fallback_background"> -->
   </body>
   
 

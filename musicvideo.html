@@ -10,15 +10,6 @@
 
 <body>
 
-
-  <div class="video-background">
-
-    <video autoplay loop muted playsinline>
-    <source src="glitch.mp4" type="video/mp4">
-      
-    </video> 
-
-
   <section class="headings">
     <header class="mscvid-head">Music videos</header>
     <p class="mscvid-sub">This page showcases every music video that absolutely
@@ -27,43 +18,104 @@
     </p>
     </section>
     
-    <div class ="music-video-links">
+  <div class="video-container">
+    <video class="yanc_video" id="yanc" width="550" height="400">
+      <source src="Jungle - You Ain't No Celebrity feat. Roots Manuva (Official Video).mp4" type="video/mp4">
+      <source src="Jungle - You Ain't No Celebrity feat. Roots Manuva (Official Video).mp4" type="video/ogg">
+    </video>
+
+    <video class="garage" id="grg" width="550" height="400">
+      <source src="Q - Garage Rooftop (Official Video) (1).mp4" type="video/mp4">
+    </video>
+
+    <video class="imym" id="iym" width="550" height="400">
+      <source src="Mitski - I’m Your Man (a @blogotheque Performance).mp4" type="video/mp4">
+    </video>
+
+</div>
     
-      <div class="garage-rooftop-box">
-        <!--Iframe is essentially a window to another link-->
-        <!--Use src and not href to link the content-->
+<div class="button_container">
+       <!-- "you_aint_no_celebrity()" -->
+    <button id="yancc" class="yanc" type="button" onclick="action()">Play "You ain't no celebrity"</button>
+    <button id="garage_roof" class="garage_roof" onclick="action_grg()">Garage rooftop</button>
+    <button id="iym" class="imyourman" onclick="action_imym()">Im your man</button>
+
+    <!-- <button class="yanc" type="button" onclick="pauseVid()">Pause "You ain't no celebrity"</button> -->
+
+</div>
+<script>
+  let im_your_man_element = document.getElementById("iym")
+
+  // Function to give button functionality
+  function action_imym(){
+    if(im_your_man_element.paused){
+      im_your_man_element.play()
+      imyourman.innerHTML="Pause I'm your man"
+    }else{
+      im_your_man_element.pause()
+      imyourman.innerHTML="Play I'm your man"
+    }
+  }
+</script>
+
+    <script>
+      let grg_roof_element = document.getElementById("grg")
+
+      // Function to give button functionality
+      function action_grg(){
+        if(grg_roof_element.paused){
+          grg_roof_element.play()
+          garage_roof.innerHTML="Pause Garage rooftop"
+        }else{
+          grg_roof_element.pause()
+          garage_roof.innerHTML="Play Garage rooftop"
+        }
+      }
+    </script>
+
+    <script>
+
+      // Pause and play can be done in one button
+      let yanc_element = document.getElementById("yanc"); 
+
+      function action() { 
+        if(yanc_element.paused){
+          yanc_element.play();
+          yancc.innerHTML="Pause You ain't no celebrity";
+        }else{
+          yanc_element.pause()
+          yancc.innerHTML="Play You ain't no celebrity";
+        }
+         
+      } 
+
+    </script>
+
+    <!-- <script>
+      function you_aint_no_celebrity(){
+        let yanc_element = document.createElement("VIDEO");
+
+        if(yanc_element.canPlayType("video/mp4")){
+          yanc_element.setAttribute("src","Jungle - You Ain't No Celebrity feat. Roots Manuva (Official Video).mp4")
+        }
+
+        yanc_element.setAttribute("controls","controls")
+        yanc_element.setAttribute("border-radius","8px")
+        yanc_element.setAttribute("width","550")
+        yanc_element.setAttribute("height","400")
+        document.body.appendChild(yanc_element)
+      }
+
+      function playvideo(){
+        yanc_element.play()
+      }
+    </script> -->
+
     
-        <iframe id ="garage-rooftop" src="https://www.youtube.com/watch?v=fMeXBqhQxFQ" title="Garage Rooftop by Q" width="600" height="200"></iframe>
-        <h1 class="garage-rooftop-heading">Garage Rooftop</h1>
-        <sub-heading class="garage-rooftop-sub"><span class="feeling" ::before>Feeling:</span>Cloud watching in a lavender field</sub-heading>
-        <p class="more-on-gr">I initially discovered this masterpiece, in 2021,
-           when I felt like I needed new music but didnt know what genre I was looking
-          for. I ended up searching "alt rnb" on youtube and it was the first video that popped up.
-          It heavily influenced what my taste is today.
-          What I especially love about this video is the beautiful depiction of what love
-          looks/feels like. The production quality is also incredible.
-        
-        </p>
-      </div>
     
-      <div class="remember-me-box">
-        <!--Iframe is essentially a window to another link-->
-        <!--Use src and not href to link the content-->
+      
     
-        <iframe id ="remember-me" src="https://www.youtube.com/watch?v=CLcEe3uYlmI" title="Remember me by Umi" width="600" height="200"></iframe>
-        <h2 class="remember-me-heading">Garage Rooftop</h2>
-        <sub-heading class="remember-me-sub"><span class="feeling" ::before>Feeling:</span>Cloud watching in a lavender field</sub-heading>
-        <p class="more-on-rm">I initially discovered this masterpiece, in 2021,
-           when I felt like I needed new music but didnt know what genre I was looking
-          for. I ended up searching "alt rnb" on youtube and it was the first video that popped up.
-          It heavily influenced what my taste is today.
-          What I especially love about this video is the beautiful depiction of what love
-          looks/feels like. The production quality is also incredible.
-        
-        </p>
-      </div>
     
-    </div>
     
 </body>
 

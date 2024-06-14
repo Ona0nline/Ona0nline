@@ -16,7 +16,8 @@
 <!-- Step 1: onclick attribute after creating button-->
 <button class="yours" id="yours" onclick="musicfunc()">Yours</button>
 <button class="mine" onclick="mysong()">Mine</button>
-<button class="us_core" onclick="video()">Us Core</button>
+<button id="us_core" class="us_core" onclick="video()">Us Core</button>
+<p id="us_core_"></p>
 
 <script>
   // In this script you are gonna define the function that you assigned to onclick
@@ -34,6 +35,12 @@
   audio_variable.setAttribute("controls","controls")
   // Take the document, apply the changes to the body, and append it
   document.body.appendChild(audio_variable)
+  document.addEventListener("click",clickfunc)
+
+  function clickfunc(){
+     document.getElementsByID("us_core_").innerHTML ="Us core"
+  }
+ 
   }
 
   function mysong(){
@@ -56,13 +63,20 @@
 function video(){
   // Video element needs to be created in All Caps
   // Decided to use Iframe instead 
-  let my_video = document.createElement("IFRAME")
-  my_video.setAttribute("src","https://www.youtube.com/watch?v=fMeXBqhQxFQ")
+  let my_video = document.createElement("VIDEO")
+
+  if(my_video.canPlayType("video/mp4")){
+    my_video.setAttribute("src","Q - Garage Rooftop (Official Video) (1).mp4")
+  }
+  // my_video.setAttribute("src","https://www.youtube.com/watch?v=fMeXBqhQxFQ")
   my_video.setAttribute("width", "560");
   my_video.setAttribute("height", "315");
   my_video.setAttribute("frameborder", "0");
   my_video.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
   my_video.setAttribute("allowfullscreen", true);
+  my_video.setAttribute("controls","controls")
+
+
 
   document.body.appendChild(my_video)
 

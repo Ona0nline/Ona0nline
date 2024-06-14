@@ -1,102 +1,91 @@
-/* body{
-  background-image: url(musicvideo.png);
-} */
-
-hr{
-  height: 3px;
+body,html{
+  background:url(mscback.png);
+  background-size:1100px 900px;
+  
 }
+
+.mscvid-head{
+  font-size: 110px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color:aliceblue;
+  font-weight: bold;
+}
+
+.mscvid-sub{
+  font-size: 25px;
+  font-family: "home";
+  text-align: center;
+  color:aliceblue;
+  background-color: #14bff8;
+  opacity:80%;
+  padding:40px 30px 40px 30px;
+  border-radius: 4px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 
 @font-face {
-font-family: "mscvid1";
-src: url(BlackStoryDemoRegular.ttf) format(truetype);
+  font-family: "cf1";
+  src: url(Jaoren.ttf) format("truetype");
+  font-family: "cf2";
+  src: url(StampyLight.ttf) format("truetype");
+  font-family: "cf3";
+  src: url(revertro.ttf) format("truetype");
+  font-family:"halovidgame";
+  src: url(HALO____.TTF) format("truetype");
+  font-family:"joystix";
+  src: url(joystix\ monospace.otf) format("opentype");
+  font-family: "home";
+  src: url(Jaoren.ttf) format("truetype");
+
+}
+.yanc,.garage_roof,.imyourman{
+  /* gatop,right,bottom,left */
+  padding:30px 40px 30px 40px;
+  /* text-align: center; */
+  font-size: 24px;
+  background-color: #0909f5;
+  font-family: "home";
+  border-radius: 8px;
+  color:aliceblue;
+  opacity:80%;
+  justify-self: left;
+  border-color: azure;
+
 }
 
-.video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
+.button_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
+  height:100%;
 }
 
-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
+.garage{
+  margin-left:30px;
+}
+
+.imym{
+  margin-left: 30px;
+}
+
+.garage_roof{
+  display: flex;
+  justify-content: left;
+  align-items: left;
   width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
+  height:100%;
 }
 
-.home-link{
-  color:#13012f;
-}
-.home-link:hover{
-  font-size: 16px;
 
-}
- .mscvid-head{
-  font-family: "mscvid1";
-  font-size: 100px;
-  text-align: center;
-  color:#311f4b;
- }
 
- .mscvid-sub{
-   font-family: "mscvid1";
-   font-size: 16px;
-  text-align: center;
-  color: #311f4b;
-  background-color: #bdb7d1;
-  margin-top: 100px;
-  padding-top: 15px;
-  padding-bottom: 15px;
- }
-
- .garage-rooftop-box{
-  background-color: #230b83;
-  max-width: 600px;
-  max-height:400px;
-  width:80%;
-  /*margin: 20px auto;*/
-  padding-bottom:30px;
-  border-radius:5px;
-  border: 7px solid grey;
-  text-align: center;
-  color: aliceblue;
-  
-
-}
-
-.remember-me-box{
-  background-color: #230b83;
-  max-width: 600px;
-  max-height:400px;
-  width:80%;
-  /*margin: 20px auto;*/
-  padding-bottom:30px;
-  border-radius:5px;
-  border: 7px solid grey;
-  text-align: center;
-  color: aliceblue;
-  
-
-}
-
-iframe{
-    width: 100%; /* Make the iframe take the full width of the container */
-    height: 160px; /* Set a fixed height for the iframe */
-    padding-top: 20px;/* Remove the default iframe border */
-    padding-bottom:20px; 
-    border:none;
-}
-
-.garage-rooftop-heading{
-  font-size: 30px;
-}
 
