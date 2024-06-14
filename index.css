@@ -82,7 +82,7 @@ opacity: 60%;
 
 
 }
-.intro,.updates1,.updates2{
+.intro,.updates1,.updates2,.updates3{
   padding:20px 20px 30px 50px;
   margin-top:60px;
   opacity: 80%;
@@ -94,12 +94,12 @@ border-radius: 6px;
   
 }
 
-.updates-heading1{
+.updates-heading1,.updates-heading2,.updates-heading3{
   font-size: 30px;
   text-align: center;
-}
+} 
 
-.updates2{
+.updates2,.updates3{
   background-color: rgb(blue);
   opacity: 80%;
   margin-top: 60px;
@@ -107,10 +107,6 @@ border-radius: 6px;
   
 }
 
-.updates-heading2{
-  font-size: 30px;
-  text-align: center;
-}
 
 h1{
   font-size: 28px;

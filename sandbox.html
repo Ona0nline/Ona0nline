@@ -1,6 +1,5 @@
-<!-- This file acts as a sandbox
-Alert acts as print statement 
--->
+<!-- This file acts as a sandbox-->
+
 <html>
   <head>
     <meta charset="UTF-8">
@@ -9,61 +8,104 @@ Alert acts as print statement
   </head>
 
   <body>
-<p class="hey">Hey</p>
-<p class="question"><span class="are">Are</span> <span class="you">you</span> <span class="calm">calm</span> <span class="yet">yet?</span></p>
+    <!-- On click attribute allows content to change on click -->
+     <!-- "this.innerHTML accesses html content" -->
+<p class="hey" onclick="this.innerHTML='So nosy'">Hey</p>
+<p class="question" onclick="this.innerHTML='*clicks in frustration'"><span class="are">Are</span> <span class="you">you</span> <span class="calm">calm</span> <span class="yet">yet?</span></p>
 
-<audio autoplay>
-  <source src="Men I Trust - Show Me How (320).mp3" type="audio/mpeg">
-</audio>
+<!-- Step 1: onclick attribute after creating button-->
+<button class="yours" id="yours" onclick="musicfunc()">Yours</button>
+<button class="mine" onclick="mysong()">Mine</button>
+<button class="us_core" onclick="video()">Us Core</button>
+
+<script>
+  // In this script you are gonna define the function that you assigned to onclick
+  // Assign to variable 
+
+  function musicfunc(){
+    let audio_variable = document.createElement("audio")
+  // Canplaytype is an audio object method and it checks if the audio can even play on the browser
+  if(audio_variable.canPlayType("audio/mpeg")){
+    audio_variable.setAttribute("src","Sade - By Your Side - Official - 2000 (320).mp3")
+  }else{
+    audio.variable.setAttribute("src","Sade - By Your Side - Official - 2000 (320).ogg")
+  }
+// set attribute parameters(name of attribute, the actual attribute)
+  audio_variable.setAttribute("controls","controls")
+  // Take the document, apply the changes to the body, and append it
+  document.body.appendChild(audio_variable)
+  }
+
+  function mysong(){
+    let my_song_ = document.createElement("audio")
+
+    if(my_song_.canPlayType("audio/mpeg")){
+      my_song_.setAttribute("src","Maureen - Sade (320).mp3")
+    }else{
+      my_song_.setAttribute("src","Maureen - Sade (320).ogg")
+    }
+
+    // Have to set controls
+    my_song_.setAttribute("controls","controls")
+    // Basically saying append the document with this variable
+    document.body.appendChild(my_song_)
+  }
+
+  // Experimenting with video
+  
+function video(){
+  // Video element needs to be created in All Caps
+  // Decided to use Iframe instead 
+  let my_video = document.createElement("IFRAME")
+  my_video.setAttribute("src","https://www.youtube.com/watch?v=fMeXBqhQxFQ")
+
+  document.body.appendChild(my_video)
+
+  }
+
+  
+</script>
+
+
     
     <script>
-      window.onload = function(){
-      alert("Sandbox Shandiz day2. Tip Calculator>")
+    // let dev = {
+    //   name: "Ona",
+    //   surname: "Zwane",
+    //   age: 19,
+    //   birthday: '21 April',
+    //   hobbies: 'crocheting,guitar,writing,singing',
+    // }
+
+    // let question = prompt("What would you like to know about Ona?","name,surname,age,birthday,hobbies?");
+    // alert(dev[question]);
+    // let her_dev = {
+    //   name: 'Justice',
+    //   birthday: '30 May 2002',
+    //   catchphrase: 'Wow Justice',
+    //   'Drake or Kendrick': 'Drake (crazy business)',
+    // }
+
+    // for (let key in her_dev){
+    //   // This alerts the keys
+    //   alert(key)
+    //   // This alerts the values
+    //   alert(her_dev[key])
+    // }
+      </script>
+
+      <script>
+        // let user = {name:"Ona"};
+        // let admin = user;
+        // admin.name = "Sihle"
+        // alert(admin.name)
+
+        // Two objects are only equal if they are they are the same object
+        // Even if they look identical
+
+        // Copying object elements into another object
+
         
-        // Building a tip calculator:
-
-        function tip_calc(){
-
-          let bill = parseFloat(prompt("Welcome to Onas' Oyster. Enter bill total: ",""));
-          if(isNaN(bill)){
-            return alert("Please refresh page and enter a valid amount");
-          }
-          
-        let tipq = confirm("Would you like to add tip on that?");
-        if(!tipq){
-          return alert(`No tip added. Your total is ${bill.toFixed(2)}`)
-        }else{
-          alert("Confirmed. Thank you");
-        }
-        
-        let tipp = prompt("Please opt between: 10%,15%, and 20%:","10%");
-        alert(`${tipp} noted.`);
-
-      switch(tipp){
-        case '10%':
-          let total_tip10 = (bill*1.1);
-          alert(`Your total is ${total_tip10.toFixed(2)}.`);
-          break
-
-        case "15%":
-          let total_tip15 = (bill*1.15);
-          alert(`Your total is ${total_tip15.toFixed(2)}.`);
-          break
-
-        case "20%":
-          let total_tip20 = (bill*1.2);
-          alert(`Your total is ${total_tip20.toFixed(2)}.`);
-          break
-
-        default:
-          alert("Please select a valid option.")
-          break
-        }
-        }
-
-        tip_calc();
-      }
-      
       </script>
       
   

@@ -1,6 +1,10 @@
 body{
   background-image: url(sandbox-back.png) ;
   background-size: 1300px, 600px;
+  color:aliceblue;
+  text-align: center;
+  font-family: "home";
+  font-size: 50px;
 }
 
 @font-face{
@@ -33,14 +37,39 @@ body{
   font-style: italic;
 }
 
-/* .are:hover{
-  color: #1ea4ff
+.yours,.mine,.us_core{
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  
+  border-color: aliceblue;
+  font-style: italic;
+  font-family: "home";
+  font-size: 24px;
 }
 
-.you:hover{
-  color: #42b4ff
+.yours:hover,.mine:hover,.us_core:hover{
+  transition: 1s;
+  opacity: 100%;
 }
 
-.yet:hover{
-  color: #89cfff
-} */
+.yours{
+  background-color: #6cc1ff;
+  color: blue;
+}
+
+.mine{
+  background-color: #ff6cdd;
+  color: rgb(175, 0, 29);
+}
+
+.us_core{
+  background-color: #ffcb53;
+  color: rgb(255, 89, 0);
+}
+
+
+
+  
