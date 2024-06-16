@@ -1,163 +1,104 @@
 <!-- This file acts as a sandbox-->
 
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="sandbox.css">
-  </head>
-
-  <body>
-    <!-- On click attribute allows content to change on click -->
-     <!-- "this.innerHTML accesses html content" -->
-<p class="hey" onclick="this.innerHTML='So nosy'">Hey</p>
-<p class="question" onclick="this.innerHTML='*clicks in frustration'"><span class="are">Are</span> <span class="you">you</span> <span class="calm">calm</span> <span class="yet">yet?</span></p>
-
-<!-- Step 1: onclick attribute after creating button-->
-<button class="yours" id="yours" onclick="musicfunc()">Yours</button>
-<button class="mine" onclick="mysong()">Mine</button>
-<button id="us_core" class="us_core" onclick="video()">Us Core</button>
-<p id="us_core_"></p>
-
-<script>
-  // In this script you are gonna define the function that you assigned to onclick
-  // Assign to variable 
-
-  function musicfunc(){
-    let audio_variable = document.createElement("audio")
-  // Canplaytype is an audio object method and it checks if the audio can even play on the browser
-  if(audio_variable.canPlayType("audio/mpeg")){
-    audio_variable.setAttribute("src","Sade - By Your Side - Official - 2000 (320).mp3")
-  }else{
-    audio.variable.setAttribute("src","Sade - By Your Side - Official - 2000 (320).ogg")
-  }
-// set attribute parameters(name of attribute, the actual attribute)
-  audio_variable.setAttribute("controls","controls")
-  // Take the document, apply the changes to the body, and append it
-  document.body.appendChild(audio_variable)
-  document.addEventListener("click",clickfunc)
-
-  function clickfunc(){
-     document.getElementsByID("us_core_").innerHTML ="Us core"
-  }
- 
-  }
-
-  function mysong(){
-    let my_song_ = document.createElement("audio")
-
-    if(my_song_.canPlayType("audio/mpeg")){
-      my_song_.setAttribute("src","Maureen - Sade (320).mp3")
-    }else{
-      my_song_.setAttribute("src","Maureen - Sade (320).ogg")
-    }
-
-    // Have to set controls
-    my_song_.setAttribute("controls","controls")
-    // Basically saying append the document with this variable
-    document.body.appendChild(my_song_)
-  }
-
-  // Experimenting with video
-  
-function video(){
-  // Video element needs to be created in All Caps
-  // Decided to use Iframe instead 
-  let my_video = document.createElement("VIDEO")
-
-  if(my_video.canPlayType("video/mp4")){
-    my_video.setAttribute("src","Q - Garage Rooftop (Official Video) (1).mp4")
-  }
-  // my_video.setAttribute("src","https://www.youtube.com/watch?v=fMeXBqhQxFQ")
-  my_video.setAttribute("width", "560");
-  my_video.setAttribute("height", "315");
-  my_video.setAttribute("frameborder", "0");
-  my_video.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
-  my_video.setAttribute("allowfullscreen", true);
-  my_video.setAttribute("controls","controls")
-
-
-
-  document.body.appendChild(my_video)
-
-  }
-
-  
-</script>
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sandbox.css">
     
+</head>
+<body>
+    
+    <p class="hey" onclick="this.innerHTML='So nosy'">Hey</p>
+    <p class="question" onclick="this.innerHTML='*clicks in frustration'"><span class="are">Are</span> <span class="you">you</span> <span class="calm">calm</span> <span class="yet">yet?</span></p>
+
+
+    <div class="dhmis-image-container" onclick="imgflip1()">
+        <img class="dhmis-image" id="dhmis-image" src="dhmis_gif.gif" alt="Dont hug me I'm scared gif">
+        <div class="dhmis-text">
+            <h1>Dont hug me I'm scared</h1>
+            <p>I'm into really odd things. I especially love listening
+              to video essays (my favourite ones cover cults:How they started, how they ended...
+              who survived etc.). This gif stands to represent the topic of <a href="https://www.youtube.com/watch?v=ny5ar-S5AbE&t=1544s">one of my absolute favorite video essays</a>
+              It has that "wtf is going on who thinks of this kind of stuff" kinda humour. Okie next gif>
+            </p>
+        </div>
+    </div>
+
+    <div class="pc-image-container" onclick="imgflip2()">
+      <img class="pc-image" id="pc-image" src="princess_carolyn_gif.gif" alt="Princess Carolyn gif">
+      <div class="pc-text">
+          <h1>Princess Carolyn</h1>
+          <p>I see myself as Princess Carolyn. Sevrely overworking herself,
+            actually drowning herself in work to avoid her life. I wanted to divulge more but I got shy while typing. (Am I cool and mysterious yet??)
+          </p>
+      </div>
+  </div>
+
+  <div class="woth-image-container" onclick="imgflip3()">
+    <img class="woth-image" id="woth-image" src="whisper_of_the_heart.gif" alt="Whisper of the heart gif">
+    <div class="woth-text">
+        <h1>Whisper of the heart</h1>
+        <p>I have long been interested in anime but those days I didnt have a proper internet connection and so I couldnt stream stuff. The first anime I tried watching on youtube, was of people enjoying food to orgasmic ends. That turned me off. I grew up a bit and searched on Netflix (I knowwwww) and I found this beautiful (coming of age). This anime fully exposed my love for these "yearning for each other", "slow burn" kind of love stories.
+        </p>
+    </div>
+
+    <div class="marc-image-container" onclick="imgflip4()">
+      <img class="marc-image" id="marc-image" src="marceline_gif.gif" alt="Marceline gif">
+      <div class="marc-text">
+          <h1>Marceline</h1>
+          <p>If you really think about it, Marceline is literally an indie-rock artist. I was always drawn to her. <a href="https://www.youtube.com/watch?v=h28xpNvW9Yw">This</a> and <a href="https://www.youtube.com/watch?v=PA2PsADo11E">(and this)</a> wait <a href="https://www.youtube.com/watch?v=fpmDtouxwlI">this too</a> are my favorite songs of hers. Heavily inspired my music taste(core). yah.
+          </p>
+      </div>
+
+      <div class="blue-image-container" onclick="imgflip5()">
+        <img class="blue-image" id="blue-image" src="blue_diamond_gif.gif" alt="Blue Diamond gif">
+        <div class="blue-text">
+            <h1>Blue diamond</h1>
+            <p>I just put her here because I like her voice and <a href="https://www.youtube.com/watch?v=mjtRO_MaEs8">I think you should hear it</a>
+            </p>
+        </div>
+
+        <div class="zima-image-container" onclick="imgflip6()">
+          <img class="zima-image" id="zima-image" src="zima_blue_gif.gif" alt="Zima Blue gif">
+          <div class="zima-text">
+              <h1>Zima Blue</h1>
+              <p>One of my favorite LDR episodes(so so so many to choose from). I think I liked how they explored themes of death, what it means to come back to yourself, the bravery that comes with starting over and the influence of art. I loved how they mirrored todays societal obsession with "shock factors"-to the point of us not even noticing that someone is literally killing themselves in front of us.
+              </p>
+          </div>
+</div>
+
     <script>
-    // let dev = {
-    //   name: "Ona",
-    //   surname: "Zwane",
-    //   age: 19,
-    //   birthday: '21 April',
-    //   hobbies: 'crocheting,guitar,writing,singing',
-    // }
+        function imgflip1() {
+            const dhmis_image_container = document.querySelector(".dhmis-image-container");
+            dhmis_image_container.classList.toggle('flipped');
+        }
 
-    // let question = prompt("What would you like to know about Ona?","name,surname,age,birthday,hobbies?");
-    // alert(dev[question]);
-    // let her_dev = {
-    //   name: 'Justice',
-    //   birthday: '30 May 2002',
-    //   catchphrase: 'Wow Justice',
-    //   'Drake or Kendrick': 'Drake (crazy business)',
-    // }
+        function imgflip2() {
+            const pc_image_container = document.querySelector(".pc-image-container");
+            pc_image_container.classList.toggle('flipped');
+        }
 
-    // for (let key in her_dev){
-    //   // This alerts the keys
-    //   alert(key)
-    //   // This alerts the values
-    //   alert(her_dev[key])
-    // }
-      </script>
+        function imgflip3() {
+            const woth_image_container = document.querySelector(".woth-image-container");
+            woth_image_container.classList.toggle('flipped');
+        }
 
-      <script>
-        // let user = {name:"Ona"};
-        // let admin = user;
-        // admin.name = "Sihle"
-        // alert(admin.name)
+        function imgflip4() {
+            const marc_image_container = document.querySelector(".marc-image-container");
+            marc_image_container.classList.toggle('flipped');
+        }
 
-        // Two objects are only equal if they are they are the same object
-        // Even if they look identical
+        function imgflip5() {
+            const blue_image_container = document.querySelector(".blue-image-container");
+            blue_image_container.classList.toggle('flipped');
+        }
 
-        // Copying object elements into another object
-
-        
-      </script>
-      
-  
+        function imgflip6() {
+            const zima_image_container = document.querySelector(".zima-image-container");
+            zima_image_container.classList.toggle('flipped');
+        }
+    </script>
 </body>
 </html>
-
-  
-
-
-
-
-
-
-
-
-
-
-
- <!-- 
- Script tag embeds statements into html code
- alert 'element' executes statements -->
-
- <!-- For loops syntax (begin,condition,step) -->
-<!-- <script>
-  // for(let i=0; i<10; i++){
-  //   alert(i);
-  // }
-  // // Output is 3 
-  // alert(i);
-
-  // Can remove any part of the for loop
-  // No step
-  for(let i = 0;i<8;i++){
-    alert(i)
-  }
-</script> -->
