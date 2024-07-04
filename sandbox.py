@@ -30,7 +30,7 @@ conn.commit()
 # Define a route for the root URL to serve the form
 @app.route('/')
 def form():
-    return render_template('index.html')
+    return render_template('sandcastle.html')
 
 # Storing data in a database. Referring to name elements from the form
 # Define a route to handle the form submission

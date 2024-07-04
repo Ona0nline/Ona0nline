@@ -4,12 +4,101 @@ body,html{
  
 }
 
-
-
 @font-face {
   font-family: "film";
-  src: url(Filmgraph\ DEMO.ttf) format(truetype);
+  src: url(GaMaamli-Regular.ttf) format(truetype);
+  font-family: "film2";
+  src: url(BodoniModaSC-Italic-VariableFont_opsz\,wght.ttf) format(truetype)
 }
   
+.cityofgod{
+  display: grid;
+  place-items: center;
+}
+.cog{
+  background-color: rgb(0, 0, 13);
+  width: 600px;
+  height: 600px;
+  overflow-y: scroll;
+  display: grid;
+
+ 
+}
+
+.lildice{
+  width:400px;
+}
+
+.cog-gallery1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.cog-gallery2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 10px;
+}
+
+.cog-button{
+  display: grid;
+  place-items: center;
+  margin-bottom:20px;
+  
+}
+
+img{
+
+  width: 100%;
+  
+}
+
+h1,h2{
+  text-align: center;
+  color: aliceblue;
+}
+
+h1{
+  font-family: "film";
+  font-size: 120px;
+}
+
+h2{
+  font-family: "film2";
+    font-size: 42px;
+
+}
+
+h3{
+  font-size: 20px;
+  color: aliceblue;
+  text-align: center;
+  
+}
+
+p{
+  color:aliceblue;
+  line-height: 26px;
+}
+
+button{
+  border-radius: 26px;
+    padding: 15px 20px;
+    font-size: 16px;
+    box-shadow: 3px 5px 3px rgb(199, 182, 0);
+    background-color: rgb(182, 3, 3);
+    font-family: "film2";
+    color:rgb(255, 255, 29);
+    border:none;
+    
+}
+
+button:hover{
+  background-color: rgb(117, 0, 0);
+  font-size: 20px;
+  transition:0.8s;
+}
 
   

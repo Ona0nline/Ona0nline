@@ -1,37 +1,41 @@
-body,html{
-  background:url(mscback.png);
-  background-size:1100px 900px;
-  
+body{
+  background-image: url(music_finall.png);
+  background-size: 1400px 700px;;
 }
 
 @font-face {
-  font-family: "cf1";
-  src: url(Jaoren.ttf) format("truetype");
-  font-family: "cf2";
-  src: url(StampyLight.ttf) format("truetype");
-  font-family: "cf3";
-  src: url(revertro.ttf) format("truetype");
-  font-family:"halovidgame";
-  src: url(HALO____.TTF) format("truetype");
-  font-family:"joystix";
-  src: url(joystix\ monospace.otf) format("opentype");
-  font-family: "home";
-  src: url(Jaoren.ttf) format("truetype");
-
+  font-family: "classyvogue";
+  src: url(ClassyVoguePersonalUse.otf) format(opentype);
 }
-.yanc{
-  /* top,right,bottom,left */
-  padding:30px 40px 30px 40px;
+
+
+h1{
+  text-align: center;
+  font-size: 200px;
+  color:azure;
+  font-family: "classyvogue";
+  margin-top: -12px;
+  font-weight: 900;
+}
+
+.sub{
   text-align: center;
   font-size: 24px;
-  background-color: #0909f5;
-  font-family: "home";
-  border-radius: 8px;
-  color:aliceblue;
-  opacity:80%;
-  align-content: center;
-  
- 
-  
+  color: aliceblue;
+  background-color: rgb(35, 94, 35);
+  opacity: 80%;
+  border-radius: 12px;
+  padding: 20px;
 }
 
+.dijon-container{
+  display: grid;
+  place-items: left;
+  border-radius: 30px;
+}
+.dijon{
+  width:600px;
+  height:500px;
+  background-color: rgb(1, 69, 46);
+  overflow-y: scroll;
+}

@@ -82,7 +82,8 @@ opacity: 60%;
 
 
 }
-.intro,.updates1,.updates2,.updates3{
+
+.scroll{
   padding:20px 20px 30px 50px;
   margin-top:60px;
   opacity: 80%;
@@ -90,11 +91,16 @@ opacity: 60%;
   background-color: #1cbbdb;
   font-family:"joystix";
   font-weight: 100;
-border-radius: 6px;
-  
+  border-radius: 30px;
+  overflow-y: scroll;
+  width: 800px;
+  height:500px;
+  display: grid;
+  place-items: center;
 }
 
-.updates-heading1,.updates-heading2,.updates-heading3{
+
+.updates-heading1,.updates-heading2,.updates-heading3,.updates-heading4{
   font-size: 30px;
   text-align: center;
 } 
