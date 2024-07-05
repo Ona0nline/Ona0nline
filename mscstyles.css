@@ -31,7 +31,7 @@ h1{
 .dijon-container{
   display: grid;
   place-items: left;
-  border-radius: 30px;
+  
 }
 .dijon{
   width:600px;
