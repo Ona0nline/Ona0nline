@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link href="musicvideostyles.css" rel="stylesheet">
-
-  </head>
+</head>
 
 <body>
 
@@ -16,118 +15,118 @@
       captured my attention. Videos I discovered a long time ago but still visit today &#9829;
       Wanna go <a class="home-link" href="index.html">home?</a>
     </p>
-    </section>
-    
-<div class="container">
-  
+  </section>
+
+  <div class="container">
     <div class="container-yanc">
-      <video class="yanc_video" id="yanc" width="650" height="500">
+      <video class="yanc_video" id="yanc" width="600" height="400">
         <source src="Jungle - You Ain't No Celebrity feat. Roots Manuva (Official Video).mp4" type="video/mp4">
         <source src="Jungle - You Ain't No Celebrity feat. Roots Manuva (Official Video).mp4" type="video/ogg">
       </video>
+      <button id="yancc" class="yanc" type="button" onclick="action_yanc()">Play "You ain't no celebrity" by
+        Jungle</button>
+    </div>
 
-          <button id="yancc" class="yanc" type="button" onclick="action()">Play "You ain't no celebrity"</button>
-
-      </div>
-    
     <div class="container-grg">
-      <video class="garage" id="grg" width="800" height="400">
+      <video class="garage" id="grg" width="600" height="400">
         <source src="Q - Garage Rooftop (Official Video) (1).mp4" type="video/mp4">
       </video>
-              <button id="garage_roof" class="garage_roof" onclick="action_grg()">Garage rooftop</button>
-
-      </div>
+      <button id="garage_roof" class="garage_roof" onclick="action_grg()">Play 'Garage rooftop' by Q</button>
+    </div>
 
     <div class="container-iym">
-      <video class="imym" id="iym" width="550" height="400">
+      <video class="imym" id="iym" width="600" height="400">
         <source src="Mitski - I’m Your Man (a @blogotheque Performance).mp4" type="video/mp4">
       </video>
-              <button id="iym" class="imyourman" onclick="action_imym()">Im your man</button>
-
+      <button id="iym_button" class="imyourman" onclick="action_imym()">Play 'Im your man' by Mitski</button>
     </div>
-    
-</div>
-    
-  
-<div class="button-container">
 
-</div>
-  
-<script>
-  let im_your_man_element = document.getElementById("iym")
+    <div class="container-stronger">
+      <video class="stronger" id="stronger_video" width="600" height="400">
+        <source src="Raveena - Stronger _ Still Dreaming _ Lovers Rock (Sade Cover) (Live).mp4" type="video/mp4">
+      </video>
+      <button class="str" id="str_button" onclick="action_stronger()">Play 'Stronger' by Raveena</button>
+    </div>
 
-  // Function to give button functionality
-  function action_imym(){
-    if(im_your_man_element.paused){
-      im_your_man_element.play()
-      imyourman.innerHTML="Pause I'm your man"
-    }else{
-      im_your_man_element.pause()
-      imyourman.innerHTML="Play I'm your man"
+    <div class="iframe-container">
+    <div id="stronger-iframe-container"></div>
+    <button class="str2" id="str_button2" onclick="action_stronger2()">Play 'Stronger' by Raveena</button>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    let im_your_man_element = document.getElementById("iym");
+    let im_your_man_button = document.getElementById("iym_button");
+
+    function action_imym() {
+      if (im_your_man_element.paused) {
+        im_your_man_element.play();
+        im_your_man_button.innerHTML = "Pause 'I'm your man'";
+      } else {
+        im_your_man_element.pause();
+        im_your_man_button.innerHTML = "Play 'I'm your man'";
+      }
     }
-  }
-</script>
+  </script>
 
-    <script>
-      let grg_roof_element = document.getElementById("grg")
+  <script>
+    let grg_roof_element = document.getElementById("grg");
+    let garage_roof_button = document.getElementById("garage_roof");
 
-      // Function to give button functionality
-      function action_grg(){
-        if(grg_roof_element.paused){
-          grg_roof_element.play()
-          garage_roof.innerHTML="Pause Garage rooftop"
-        }else{
-          grg_roof_element.pause()
-          garage_roof.innerHTML="Play Garage rooftop"
-        }
+    function action_grg() {
+      if (grg_roof_element.paused) {
+        grg_roof_element.play();
+        garage_roof_button.innerHTML = "Pause 'Garage rooftop'";
+      } else {
+        grg_roof_element.pause();
+        garage_roof_button.innerHTML = "Play 'Garage rooftop'";
       }
-    </script>
+    }
+  </script>
 
-    <script>
+  <script>
+    let yanc_element = document.getElementById("yanc");
+    let yanc_button = document.getElementById("yancc");
 
-      // Pause and play can be done in one button
-      let yanc_element = document.getElementById("yanc"); 
-
-      function action() { 
-        if(yanc_element.paused){
-          yanc_element.play();
-          yancc.innerHTML="Pause You ain't no celebrity";
-        }else{
-          yanc_element.pause()
-          yancc.innerHTML="Play You ain't no celebrity";
-        }
-         
-      } 
-
-    </script>
-
-    <!-- <script>
-      function you_aint_no_celebrity(){
-        let yanc_element = document.createElement("VIDEO");
-
-        if(yanc_element.canPlayType("video/mp4")){
-          yanc_element.setAttribute("src","Jungle - You Ain't No Celebrity feat. Roots Manuva (Official Video).mp4")
-        }
-
-        yanc_element.setAttribute("controls","controls")
-        yanc_element.setAttribute("border-radius","8px")
-        yanc_element.setAttribute("width","550")
-        yanc_element.setAttribute("height","400")
-        document.body.appendChild(yanc_element)
+    function action_yanc() {
+      if (yanc_element.paused) {
+        yanc_element.play();
+        yanc_button.innerHTML = "Pause 'You ain't no celebrity'";
+      } else {
+        yanc_element.pause();
+        yanc_button.innerHTML = "Play 'You ain't no celebrity'";
       }
+    }
+  </script>
 
-      function playvideo(){
-        yanc_element.play()
+  <script>
+    let stronger_element = document.getElementById("stronger_video");
+    let stronger_button = document.getElementById("str_button");
+
+    function action_stronger() {
+      if (stronger_element.paused) {
+        stronger_element.play();
+        stronger_button.innerHTML = "Pause 'Stronger'";
+      } else {
+        stronger_element.pause();
+        stronger_button.innerHTML = "Play 'Stronger'";
       }
-    </script> -->
+    }
 
-    
-    
-      
-    
-    
-    
+   
+  </script>
+
+
+  <script>
+  function action_stronger2() {
+      let container = document.getElementById("stronger-iframe-container");
+      container.innerHTML = `
+        <iframe width="600" height="400" src="Raveena - Stronger _ Still Dreaming _ Lovers Rock (Sade Cover) (Live).mp4" frameborder="0" allowfullscreen></iframe>
+      `;
+    }
+  </script>
+
 </body>
-
 
 </html>

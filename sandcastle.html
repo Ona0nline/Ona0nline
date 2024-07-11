@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="sandcastle.css">
     
 </head>
@@ -30,6 +31,20 @@
        
        
        </div>
+
+       <script>
+        function showcomments(response) {
+            console.log(response);
+            console.log(response.comment.email);
+          }
+
+          let url = "https://jsonplaceholder.typicode.com/";
+
+          axios.get(url).then(showcomments);
+
+          console.log("Hello")
+
+       </script>
 
         
         
