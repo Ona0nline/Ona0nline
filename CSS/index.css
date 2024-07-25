@@ -1,0 +1,208 @@
+body{
+  background-image: url(../IMAGES/Homepage.png);
+  background-size: 1400px 900px;
+  
+ }
+
+ 
+ .web-head{
+  color:white;
+  font-family:"home"; 
+  font-size:180px;
+  text-align: center;
+  margin: 150px 30px 50px 30px;
+
+}
+
+.web-head:hover{
+  cursor:pointer;
+  font-size:200px;
+  color:#e0b1cb;
+  transition:1s;
+}
+
+.web-subtext{
+  color:white;
+  font-family:"home";
+  font-size:20px;
+  text-align:center;
+
+}
+@font-face {
+  font-family: "home";
+    src: url(../FONTS/Jaoren.ttf) format("truetype");
+    font-family: "cf2";
+    src: url(../FONTS/StampyLight.ttf) format("truetype");
+    font-family: "cf3";
+    src: url(../FONTS/revertro.ttf) format("truetype");
+    font-family: "halovidgame";
+    src: url(../FONTS/HALO____.TTF) format("truetype");
+    font-family: "joystix";
+    src: url(../FONTS/joystix\ monospace.otf) format("opentype");
+ 
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #DBD3D8;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: #3D3B3C;
+text-align: center;
+padding: 20px 28px;
+text-decoration: none;
+font-size:20px;
+font-weight:bold;
+}
+
+li a:hover {
+background-color:#e0b1cb;
+cursor:pointer;
+color:#fdf8e1;
+font-size:22px;
+transition:1s;
+}
+
+.intro{
+  background-color: #1cbbdb;
+  font-size:20px;
+  font-family:"joystix";
+  font-weight: 100;
+border-radius: 6px;
+opacity: 60%;
+
+
+}
+
+.scroll{
+  padding:20px 20px 30px 50px;
+  margin-top:60px;
+  opacity: 80%;
+  padding-bottom: 5px;
+  background-color: #1cbbdb;
+  font-family:"joystix";
+  font-weight: 100;
+  border-radius: 30px;
+  overflow-y: scroll;
+  width: 800px;
+  height:500px;
+  display: grid;
+  place-items: center;
+}
+
+
+.updates-heading1,.updates-heading2,.updates-heading3,.updates-heading4{
+  font-size: 30px;
+  text-align: center;
+} 
+
+.updates2,.updates3{
+  background-color: rgb(blue);
+  opacity: 80%;
+  margin-top: 60px;
+  padding-bottom: 40px;
+  
+}
+
+
+h1{
+  font-size: 28px;
+  font-family: "joystix";
+  background-attachment: fixed;
+  background-color: rgb(128, 240, 240);
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+
+}
+
+.music-box{
+  max-height: 500px;
+  max-width:800px;
+  width:100%;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  text-align: center;
+ flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 230px;
+  margin-top: 150px;
+  border-radius: 12px;
+  border-color: black;
+  border-width: 4px;
+  border: 8px solid rgb(0, 0, 172);
+
+}
+  
+.center_attempt{
+  width: 80%; /* Adjust the width as needed */
+  max-width: 800px; /* Optional: set a maximum width */
+  margin: 0 auto;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Optional: Adds space between sections */
+  position: relative;
+  background-color: aliceblue;
+}
+
+ iframe {
+  width: 100%;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left:20px;
+  border:none;
+}
+
+.explain{
+  font-family: "joystix";
+  font-size: 14px;
+}
+
+.brainlink{
+  color: aliceblue;
+
+}
+
+/* .film-box {
+  border: 5px solid black;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 100px;
+  margin-left: 20px; 
+  margin-right: 20px;
+  text-align: center;
+  background-color: #96041A;
+  text-align: center; 
+  width:800px;
+   */
+
+
+h2{
+  font-family: "joystix";
+  font-size: 30px;
+  background-color: grey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 6px;
+}
+
+.sandbox-link{
+  color:aliceblue;
+}
+

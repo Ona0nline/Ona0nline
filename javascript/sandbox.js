@@ -26,3 +26,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+ function showcomments(response) {
+            console.log(response);
+            console.log(response.comment.email);
+          }
+
+          let url = "https://jsonplaceholder.typicode.com/";
+
+          axios.get(url).then(showcomments);
+
+          console.log("Hello")
