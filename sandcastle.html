@@ -21,85 +21,62 @@
       <p class="question" onclick="this.innerHTML='*clicks in frustration'"><span class="are">Are</span> <span class="you">you</span> 
           <span class="calm">calm</span> <span class="yet">yet?</span></p>
  </div>
-      <div class="big-container">
-                <div class="scrollable-stuff">
-                  <p>This is what I want in my scrollable box.</p>
-                  <!-- We are trying to make an image gallery -->
-                  <!-- Slideshow container -->
-                  <div class="slideshow-container">
-                  
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 3</div>
-                      <img src="../IMAGES/lady bird_6.jpeg" style="width:100%">
-                      <div class="text">Caption Text</div>
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 3</div>
-                      <img src="../IMAGES/City of God (2002).jpeg" style="width:100%">
-                      <div class="text">Caption Two</div>
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 3</div>
-                      <img src="../IMAGES/download (16).jpeg" style="width:100%">
-                      <div class="text">Caption Three</div>
-                    </div>
-                  
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                  <br>
-                  
-                  <!-- The dots/circles -->
-                  <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                  </div>
-                
-                  
+     
 
+      <!-- Using bootsrap to try an offcanvas sidebar thing -->
+       <div class="offcanvas offcanvas-start" id="example">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        <div class="offcanvas-body">
+
+          <div id="carousel-example" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators -->
+             <div class="carousel-dots">
+              <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="1" ></button>
+              <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="2" ></button>
+
+             </div>
+
+             <!-- Carsousel inner -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="IMAGES/download (14).jpeg" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="IMAGES/Homepage.png" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="IMAGES/Lady Bird5.jpeg" class="d-block w-100">
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-example" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-example" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+
+               
                 </div>
 
               </div>
-    </div>
+          </div>
+           <button type="button" class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#demo">View cart</button>
 
-    <!-- First bootsrap container -->
-     <div class="container-md pt-5 my-5 bg-primary text-white">
-      <h1>My first bootstrap container</h1>
-      <p>This container type has a fixed width</p>
-
-     </div>
-
-     <div class="container-fluid">
-      <h1>My fluid container</h1>
-      <p>This width spans the width of the viewport</p>
-     </div>
-     
-    <div class="container-sm bg-dark">.container-sm</div>
-    <div class="container-md bg-primary">.container-md</div>
-      <div class="container-lg bg-dark my-5">.container-lg</div>
-
-      <!-- Creating dynamic coloumns -->
-       <!-- You start by creating a row -->
-       <div class="row">
-        <div class="col-sm-3 bg-dark text-white p-5">coloumn1</div>
-        <div class="col-sm-3 bg-dark text-white p-5">coloumn1</div>
-        <div class="col-sm-3 bg-dark text-white p-5">coloumn1</div>
-        <div class="col-sm-3 bg-dark text-white p-5">coloumn1</div>
-
-        <div class="col-sm-4 bg-dark text-white p-5">coloumn1</div>
-        <div class="col-sm-8 bg-dark text-white p-5">coloumn1</div>
-
-        <img class="img-fluid" src="IMAGES/bcaback2.png" alt="brainchemalt back">
-
+        </div>
 
        </div>
 
+       <div class="offcanvas offcanvas-end" id="demo">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+       </div>
 
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#example">
+        Open Offcanvas Sidebar
+      </button>
 
        <script src="javascript/sandbox.js"></script>
 
