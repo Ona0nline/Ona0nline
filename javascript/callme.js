@@ -1,1 +1,1 @@
-alert("Thee most beta page, early early days");
+alert("Thee most beta page, early early days. Please don't laugh at me");
