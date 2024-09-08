@@ -1,0 +1,85 @@
+body{
+  background-color: black;
+}
+
+video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+  transform: scale(0.98)
+}
+
+.overlay {
+  --border-style: 3px solid red;
+  --border-space: 20px;
+
+  position: absolute;
+  width: 720px;
+  height: 480px;
+}
+
+.overlay-helper {
+  position: relative;
+  width: 1300px;
+  height: 700px;
+}
+
+.overlay-element {
+  padding: 20px;
+  width: 150px;
+  height: 100px;
+  position: absolute;
+}
+
+.overlay-text {
+  font-size: 1.75em;
+  color: white;
+  font-family: monospace;
+}
+
+.overlay .top-left {
+  border-left: var(--border-style);
+  border-top: var(--border-style);
+  top: var(--border-space);
+  left: var(--border-space);
+  text-align: left;
+}
+
+.overlay .top-right {
+  border-right: var(--border-style);
+  border-top: var(--border-style);
+  top: var(--border-space);
+  right: var(--border-space);
+  text-align: right;
+}
+
+.overlay .bottom-left {
+  border-left: var(--border-style);
+  border-bottom: var(--border-style);
+  bottom: var(--border-space);
+  left: var(--border-space);
+  text-align: left;
+}
+
+.overlay .bottom-right {
+  border-right: var(--border-style);
+  border-bottom: var(--border-style);
+  bottom: var(--border-space);
+  right: var(--border-space);
+  text-align: right;
+}
+
+#overlay-bottom-left-text {
+  position: absolute;
+  bottom: var(--border-space);
+  left: var(--border-space);
+}
+
+#overlay-bottom-right-text {
+  position: absolute;
+  bottom: var(--border-space);
+  right: var(--border-space);
+}

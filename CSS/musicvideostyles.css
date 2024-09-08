@@ -49,15 +49,15 @@ button{
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(3,3fr);
   gap:20px;
 }
 
 .yanc,
 .garage_roof,
-.imyourman,.str {
+.imyourman,.str,.holdonbtn,.lomeldabtn,.winehousebtn {
   /* gatop,right,bottom,left */
-  padding: 30px 40px 30px 40px;
+  padding: 20px 30px;
   /* text-align: center; */
   font-size: 24px;
   background-color: #0909f5;
