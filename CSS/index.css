@@ -1,6 +1,6 @@
 body{
-  background-image: url(../IMAGES/Homepage.png);
-  background-size: 1400px 900px;
+  background-image: url(../IMAGES/Distance\ and\ Desire.png);
+  background-size: 1300px 900px;
   
  }
 
@@ -100,9 +100,9 @@ opacity: 60%;
 }
 
 
-.updates-heading1,.updates-heading2,.updates-heading3,.updates-heading4,.updates-heading5{
+.updates-heading1,.updates-heading2,.updates-heading3,.updates-heading4,.updates-heading5,.updates-heading6{
   font-size: 30px;
-  text-align: center;
+  /* text-align: center; */
 } 
 
 .updates2,.updates3{
@@ -118,9 +118,11 @@ h1{
   font-size: 28px;
   font-family: "joystix";
   background-attachment: fixed;
-  background-color: rgb(128, 240, 240);
+  background-color: rgb(110, 242, 242);
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 5px;
+  box-shadow: 8px 8px 6px rgb(126, 213, 227);
 
 
 }
