@@ -1,5 +1,5 @@
 body{
-  background-image: url(../IMAGES/Nuu\ Day.png);
+  background-image: url(../IMAGES/Desktop.png);
   background-size: 1300px 900px;
   
  }
@@ -102,7 +102,7 @@ opacity: 60%;
 
 .updates-heading1,.updates-heading2,.updates-heading3,
 .updates-heading4,.updates-heading5,.updates-heading6,
-.updates-heading7{
+.updates-heading7,.updates-heading8{
   font-size: 30px;
   /* text-align: center; */
 } 
